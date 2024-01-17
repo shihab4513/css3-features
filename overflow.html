@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Overflow</title>
+    <style>
+
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 3px solid slateblue;
+            /* overflow auto dile jodi div e text er jaiga na hoi by default se scroll function diye dei */
+            overflow: auto;
+        }
+        #box-1{
+            /* overflow-hidden jodi div lekha div er baire chole jai seta ke hidden kore dei */
+            /* overflow: hidden; */
+             /* overflow scroll scroll functionality dei */
+            /* overflow: scroll;
+            overflow-x: hidden; */
+        }
+        .ellipsis{
+            width: 200px;
+            border: 2px solid steelblue;
+            /* jodi lekha width theke besi hoi tobe by default text wrap hoe porer line e chole jai but white-space:nowrap dile lekha sob 1 line e hoi even if it crosses the boundary  */
+            white-space: nowrap;
+            /* overflow hidden dile width er baire je lekha ache seta hidden hoe jai, */
+            overflow: hidden;
+            /* text-overflow:ellipsis dile lekhar ses e ... ase */
+            text-overflow: ellipsis;
+            /* text overflow clip dile width er ses porjonto text jai */
+            /* text-overflow: clip; */
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <!-- p er moddhe title dile jodi cursor lekhar upore nei tobe pora title show kore -->
+        <p title="I am a serious learner.I give at least 6 hour a day in study without any gap." class="ellipsis">I am a serious learner.I give at least 6 hour a day in study without any gap.</p>
+    </header>
+    <section>
+        <div class="box" id="box-1">
+            <h3>My Text Box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa fugit obcaecati magnam laudantium, nam
+                dolor repudiandae porro, ab mollitia neque incidunt earum asperiores, commodi alias suscipit quidem
+                maxime harum eos. Illum deserunt repudiandae natus excepturi sit facere perspiciatis fuga nam voluptas
+                alias, ut ipsam animi mollitia similique maiores assumenda quia fugit officia consequatur hic, eius
+                praesentium dolores laborum? Odio, autem incidunt nobis culpa dignissimos repudiandae rerum dolores sed
+                doloribus, quisquam nisi cum qui enim fugit maiores ut hic tenetur earum ex expedita ea perferendis.
+                Iste saepe ipsa similique, quam, aut sit corporis ratione cumque ea accusantium deleniti illum porro
+                necessitatibus cupiditate dicta consectetur enim repudiandae tempore esse amet illo. Vero dicta
+                voluptates quibusdam quis quae accusantium iusto asperiores unde cupiditate ea in, natus ab autem?
+                Cumque, accusantium, laboriosam sit earum alias ducimus excepturi modi animi amet velit minima, maxime
+                ex fugit fuga libero nostrum voluptates! Enim in facere vero ea dolorum cumque voluptas dolor veniam,
+                dicta incidunt, laborum non corporis optio. Doloribus sapiente, possimus ut illo quia eligendi
+                architecto amet cum? Maxime, ullam pariatur consequuntur consequatur atque quis, ea quidem veritatis
+                ipsam voluptatibus amet blanditiis praesentium perferendis explicabo, nostrum vero non commodi adipisci
+                quibusdam similique tenetur? Rem adipisci totam recusandae?</p>
+        </div>
+        <div class="box">
+            <h3>My Text Box 2</h3>
+            <p>Magni ipsa vero alias sit modi, dolore excepturi corporis nemo quam labore ullam molestiae facere
+                delectus ipsum illo quaerat tenetur repudiandae, porro necessitatibus, possimus a mollitia eveniet?
+                Neque impedit voluptatum ullam et dolores exercitationem libero tempora harum quasi, maxime praesentium
+                dolorum illum, quae vitae repudiandae ducimus consequatur magnam odio ut fugiat? Quisquam sint accusamus
+                quaerat exercitationem impedit ipsa illum maxime modi, nesciunt repellat? Unde expedita quasi inventore
+                quo quaerat aut facere quia, itaque consequuntur sit, minima quod rem corrupti temporibus aspernatur
+                magnam beatae veritatis iste vel ipsa dolore. Rem nobis, quam tempora modi optio, soluta ex maxime odio
+                corporis, ducimus deleniti accusamus ea ipsa cum reprehenderit tenetur voluptatem enim! Tenetur rem
+                itaque, beatae maiores corporis eum ipsam tempora dicta repudiandae modi adipisci natus qui ab sit ea
+                nobis, porro in illum. Harum exercitationem explicabo, odio, quasi laborum, ad fugit aspernatur corrupti
+                perspiciatis ea quas laudantium. Alias ipsam deserunt illum tempore laborum tempora repellat, debitis at
+                iure voluptate incidunt error quibusdam reiciendis corrupti libero eius! Soluta laboriosam quia velit
+                nemo vel quaerat quisquam recusandae maxime explicabo, tempora, natus possimus fugiat sint culpa
+                reprehenderit, quam amet in? Placeat fugit tenetur odit vero ratione, id voluptate similique ex
+                exercitationem, incidunt, optio ullam voluptatem.</p>
+        </div>
+    </section>
 </body>
+
 </html>
