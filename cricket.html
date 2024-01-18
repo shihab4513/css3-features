@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket hit</title>
+    <style>
+        .field{
+            border: 1px solid steelblue;
+        }
+        .bat{
+            transition: transform 0.1s ease-in;
+        }
+        .ball{
+            transition: transform 1s ease-out 0.2s;
+        }
+        /* field er vitor jokhon hover korbo bat er moddhe below task gula hobe */
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+       .field:hover .ball{
+        transform: translate(1000px,-500px);
+        /* transform-origin: bottom left; */
+       }
+        .ball{
+            height: 50px;width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img src="images/bat.png" alt="" srcset="" class="bat">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
